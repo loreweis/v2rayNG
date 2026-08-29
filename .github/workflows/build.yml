@@ -1,6 +1,8 @@
 name: Build APK
 
 on:
+  repository_dispatch:
+    types: [new_libv2ray]
   workflow_dispatch:
     inputs:
       release_tag:
